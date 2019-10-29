@@ -5,14 +5,19 @@ import Car from './Car/Car'
 class App extends Component {
   render() { 
     const divStyle = {
-      textAlign: 'center'
+      textAlign: 'center',
+      display: 'flex',
+      justifyContent: 'space-around',
+      flexWrap: 'wrap'
+
     }
     
     return ( 
       <div style={divStyle}>
-          <h1> Hello world!</h1>
 
-          <Car /> 
+          <Car name={'Ford'} year = {2018}/> 
+          <Car name= "Audi" year = {2019}/>
+          <Car name={'Bmw'}  year = {2005}/>
       </div>
     )
   }

@@ -17,8 +17,17 @@ import React from 'react'
 
 //export default car
 
-export default () => (
-    <div> 
-        This is car component
+// export default (props) => (
+//     <div style={{marginLeft: '25px'}}> 
+//         <h3>Car name: {props.name}</h3> 
+//         <p>Year: <strong>{props.year }</strong></p>
+//     </div>
+// )
+
+
+export default props => (
+    <div style={{marginLeft: '25px'}}> 
+        <h3>Car name: {props.name}</h3> 
+        <p>Year: <strong>{props.year }</strong></p>
     </div>
 )
